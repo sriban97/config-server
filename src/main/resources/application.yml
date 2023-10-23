@@ -1,0 +1,21 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: config-server
+  profiles:
+    default: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sriban97/green-config-server-props
+          clone-on-start: true
+          username:
+          password:
+          skip-ssl-validation: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
