@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: dev-k8s
-          image: sriban97/config-server # Image that will be used to containers in the cluster
+          image: sriban97/config-server:config-server # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080 # The port that the container is running on in the cluster
