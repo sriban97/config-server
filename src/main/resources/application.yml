@@ -14,6 +14,7 @@ spring:
       server:
         git:
           uri: https://github.com/sriban97/green-config-server-props
+          default-label: main
           clone-on-start: true
           username:
           password:
